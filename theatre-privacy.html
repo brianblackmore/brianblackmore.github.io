@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy policy for Theatre Calendar and its Google Calendar integration.">
+    <title>Privacy policy · Theatre Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">Theatre Calendar</a>
+        <nav aria-label="Main navigation">
+          <a href="theatre.html">Theatre app</a>
+          <a href="theatre-privacy.html" aria-current="page">Theatre privacy policy</a>
+        </nav>
+      </div>
+    </header>
+    <main class="policy">
+      <p class="eyebrow">Theatre Calendar</p>
+      <h1>Privacy policy</h1>
+      <p class="updated">Last updated: <time datetime="2026-11-06">6 November 2026</time></p>
+      <p class="lede">This policy explains how Theatre Calendar handles information when preparing and synchronizing theatre bookings with Google Calendar.</p>
+
+      <section aria-labelledby="information">
+        <h2 id="information">Information used</h2>
+        <p>The app uses upcoming theatre bookings recorded in a local workbook. A calendar entry may include the show title, date and time, venue or location, and the name or names of the people attending. If a matching event with a time is found in a source calendar, its time is used. Otherwise the booking is all-day. Its location comes from a matching event when available, or from the workbook's venue and city.</p>
+        <p>The Google sync uses the booking details needed to create calendar entries, not workbook details such as costs, hotel arrangements, notes, or ratings. Cancelled bookings and reservation placeholders are excluded from person-specific calendar exports.</p>
+      </section>
+
+      <section aria-labelledby="google">
+        <h2 id="google">Google Calendar API use</h2>
+        <p>The sync uses Google's Calendar API to create a dedicated calendar for each configured companion and keep that calendar up to date with their selected upcoming theatre bookings. It adds or updates upcoming events managed by the integration, and removes managed upcoming events when the corresponding booking is no longer planned. Past events are retained.</p>
+        <p>The app requests the OAuth permission <code>https://www.googleapis.com/auth/calendar.app.created</code>, which applies to calendars created by this app. It does not read or change your pre-existing Google calendars or unrelated calendar data. Source calendar feeds are used by the local sync process to match show times and locations, not copied wholesale into Google Calendar.</p>
+        <p>Each calendar is shared manually by its owner with the relevant person using read-only event access. Calendars are not made public, and this website does not host calendar feeds.</p>
+      </section>
+
+      <section aria-labelledby="storage">
+        <h2 id="storage">Storage and sharing</h2>
+        <p>Google receives and stores the event details needed to create the selected calendar entries. The Google authorization token and app configuration are stored in local files on the computer running the sync, not on this website or in the source-code repository. The computer's operator can access those files.</p>
+        <p>Calendar information is not sold, used for advertising or profiling, or used to train AI models. The app does not share calendar details with anyone automatically; access is controlled by the calendar owner's sharing settings. Anyone who is granted access can view or copy event information.</p>
+      </section>
+
+      <section aria-labelledby="control">
+        <h2 id="control">Your choices</h2>
+        <p>You can change or remove bookings in the source workbook. You can revoke the app's Google access from your <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revoking access stops future API updates, but does not automatically delete calendars or events already created; you can remove those in Google Calendar.</p>
+        <p>For questions about the workflow or requests concerning calendar information, contact <a href="https://github.com/brianblackmore">Brian Blackmore through GitHub</a>. Please do not include private calendar details in a public message.</p>
+      </section>
+
+      <section aria-labelledby="website">
+        <h2 id="website">This website</h2>
+        <p>These are static information pages hosted on GitHub Pages. They do not ask you to sign in or submit calendar information, and they contain no analytics, advertising, or tracking cookies. GitHub may process technical request information, such as IP addresses, to operate and secure its hosting service. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">Changes to this policy</h2>
+        <p>This policy will be updated if the integration's actual behavior or data use changes. The date above identifies the latest revision.</p>
+      </section>
+    </main>
+    <footer>
+      <a href="index.html">Home</a>
+      <a href="theatre.html">Theatre app</a>
+    </footer>
+  </body>
+</html>
